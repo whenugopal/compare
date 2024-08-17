@@ -8,7 +8,12 @@ export default function Home() {
         <div className="listview">
           <ul>
             <div className="compare-view">
-              <CardContainer />
+              <div className="compare-view-card-container">
+                <CardContainer />
+              </div>
+              <div className="compare-view-card-container">
+                <CardContainer />
+              </div>
             </div>
           </ul>
         </div>
