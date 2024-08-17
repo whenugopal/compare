@@ -11,6 +11,10 @@ export default function Home() {
               <div className="compare-view-card-container">
                 <CardContainer />
               </div>
+
+              <div className="compare-view-card-container">
+                <CardContainer />
+              </div>
               <div className="compare-view-card-container">
                 <CardContainer />
               </div>

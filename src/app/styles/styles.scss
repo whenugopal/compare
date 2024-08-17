@@ -28,7 +28,7 @@ html {
       margin-bottom: -6rem;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       margin-right: -4.8rem;
 
       .compare-view-card-container {
@@ -40,13 +40,13 @@ html {
 
       .card-container {
         position: relative;
+        width: 100%;
+
         padding: 30px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-
+        flex-direction: column;
         text-align: center;
-        width: 100%;
         border: 0.1rem solid #d6d6d6;
         box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
         border-radius: 0.2rem;
@@ -107,7 +107,6 @@ html {
           background-color: #f5f5f5;
           border-bottom: 0.1rem solid #d6d6d6;
           padding-top: 2.4rem;
-
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
@@ -116,6 +115,37 @@ html {
           flex-grow: 1;
           padding-left: 2.4rem;
           padding-right: 2.4rem;
+
+          .card-detailed {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding-top: 1.6rem;
+            padding-bottom: 1.6rem;
+            border-bottom: 0.1rem solid #d6d6d6;
+            line-height: 2.8rem;
+            .label {
+              flex: 1;
+              margin-right: 0.8rem;
+              letter-spacing: 0.0035rem;
+              color: #313131;
+              display: flex;
+              flex-direction: row;
+              font-weight: 400;
+            }
+
+            .value {
+              flex: none;
+              max-width: 50%;
+              text-align: end;
+              letter-spacing: 0.004rem;
+              color: #123d80;
+              font-size: 1.6rem;
+              font-weight: 600;
+              line-height: 2.8rem;
+              display: flex;
+            }
+          }
         }
       }
     }
