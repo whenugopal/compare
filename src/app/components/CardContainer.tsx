@@ -1,10 +1,12 @@
 import Image from "next/image";
 import CloseButton from "./CloseButton";
 
-const CardContainer = () => {
+const CardContainer = (props: { id: string; updateCards: any }) => {
+  const updateCards = props.updateCards;
+  const id = props.id;
   return (
     <div className="card-container">
-      <div className="card-header">Abacus</div>
+      <div className="card-header">{id}</div>
       <div className="card-image">
         <a href="www.google.com">
           <img src="https://onlinelibrary.wiley.com/action/showCoverImage?journalCode=14676281" />
@@ -24,7 +26,7 @@ const CardContainer = () => {
           <div className="value">8%</div>
         </div>
       </div>
-      <CloseButton />
+      <CloseButton id={id} updateCards={updateCards} />
     </div>
   );
 };

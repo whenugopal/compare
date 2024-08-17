@@ -1,12 +1,15 @@
-const CloseButton = () => {
+const CloseButton = (props: { updateCards: any; id: any }) => {
+  const updateCards = props.updateCards;
+  const id = props.id;
   return (
     <>
-      <div className="banner-close">
-        <a
-          href="/en-us/publish/journal-finder/abacus/14676281"
-          target="_blank"
-        ></a>
-      </div>
+      <div
+        className="banner-close"
+        onClick={(e) => {
+          updateCards(e.currentTarget.getAttribute("id"));
+        }}
+        id={id}
+      ></div>
     </>
   );
 };
