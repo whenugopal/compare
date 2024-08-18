@@ -27,13 +27,12 @@ html {
       margin-bottom: 4rem;
     }
     .compare-view {
-      padding-top: 2.7rem;
       margin-bottom: -6rem;
-      display: flex;
-      flex-direction: row;
-      // flex-wrap: wrap;
       margin-right: -4.8rem;
-
+      padding: 2.7rem;
+      margin-bottom: -6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       .compare-view-card-container {
         display: block;
         margin-bottom: 6rem;
