@@ -12,8 +12,8 @@ const PlaceHolderContainer = () => {
                 viewBox="0 0 16 16"
                 fill="none"
               >
-                <path d="M8 3L8 13" stroke="black" stroke-width="2"></path>
-                <path d="M3 8L13 8" stroke="black" stroke-width="2"></path>
+                <path d="M8 3L8 13" stroke="black" strokeWidth="2"></path>
+                <path d="M3 8L13 8" stroke="black" strokeWidth="2"></path>
               </svg>
             </span>
 
