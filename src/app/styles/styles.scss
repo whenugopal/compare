@@ -17,6 +17,8 @@ html {
 }
 
 .results {
+  display: block;
+  background: rgb(255, 255, 255);
   .listview {
     float: left;
     flex: 76%;
@@ -202,4 +204,21 @@ html {
   padding: 1rem;
   top: -1.2rem;
   right: -1.2rem;
+}
+
+.simiar-section {
+  .similar-journals {
+    // background: rgb(245, 245, 245);
+    // display: block;
+    .similar-products-list {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      width: 100%;
+      word-break: break-word;
+      padding-top: 8rem;
+      padding-bottom: 9rem;
+      column-gap: 1.6rem;
+      row-gap: 1.6rem;
+    }
+  }
 }
